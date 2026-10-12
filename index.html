@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10100f">
+  <meta name="description" content="PixieBloom is your aesthetic image gallery for flowers, travel, fashion, food and beautiful places.">
+  <title>PixieBloom | Explore Beautiful Moments</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#" class="logo">Pixie<span>Bloom.</span></a>
+
+  <div class="search-box">
+    <input type="search" id="searchInput"
+      placeholder="Search images, places, flowers..."
+      aria-label="Search gallery">
+    <button id="searchBtn" aria-label="Search">⌕</button>
+  </div>
+
+  <div class="header-actions">
+    <button id="homeBtn" class="nav-btn">Home</button>
+    <button id="favBtn" class="nav-btn">♥ Favourites</button>
+  </div>
+</header>
+
+<section class="hero">
+  <p class="eyebrow">YOUR WORLD, IN FRAMES</p>
+  <h1>Discover beauty in<br><span>every frame.</span></h1>
+  <p class="hero-text">
+    A curated collection of beautiful places, little moments,
+    creative designs and everyday inspiration.
+  </p>
+  <button class="explore-btn" id="exploreBtn">
+    Explore Gallery ↓
+  </button>
+</section>
+
+<main class="gallery-section" id="gallery">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">CURATED FOR YOU</p>
+      <h2 id="sectionTitle">Explore the Gallery</h2>
+    </div>
+    <span id="imageCount"></span>
+  </div>
+
+  <div class="categories" id="categories">
+    <button class="category active" data-category="All">All Images</button>
+    <button class="category" data-category="Flowers">Flowers</button>
+    <button class="category" data-category="Floral Designs">Floral Designs</button>
+    <button class="category" data-category="Travel">Travel</button>
+    <button class="category" data-category="Tourism">Tourism</button>
+    <button class="category" data-category="Hotels">Hotels</button>
+    <button class="category" data-category="Food">Food</button>
+    <button class="category" data-category="Beautiful Places">Beautiful Places</button>
+    <button class="category" data-category="Countries">Countries</button>
+    <button class="category" data-category="Cosmetics">Cosmetics</button>
+    <button class="category" data-category="Footwear">Footwear</button>
+    <button class="category" data-category="Fashion">Fashion</button>
+    <button class="category" data-category="Nature">Nature</button>
+    <button class="category" data-category="Architecture">Architecture</button>
+  </div>
+
+  <div class="gallery-grid" id="galleryGrid"></div>
+
+  <p class="empty-message" id="emptyMessage" hidden>
+    No images found. Try another search or category.
+  </p>
+</main>
+
+<footer>
+  <a href="#" class="logo">Pixie<span>Bloom.</span></a>
+  <p>Where Beautiful Things Bloom. ✿</p>
+  <p class="copyright">
+    © 2026 PixieBloom · Your visual inspiration space
+  </p>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
